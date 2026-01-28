@@ -1132,3 +1132,99 @@ img {
 @media (max-width: 768px) {
   .cookie-popup__content { flex-direction: column; text-align: center; }
 }
+/* ==========================================================================
+   LEGAL PAGES STYLING (ЭТАП 5)
+   ========================================================================== */
+
+   .pages {
+    padding: 160px 0 100px;
+    background: var(--color-bg);
+}
+
+.pages__breadcrumb {
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+}
+
+.pages__breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+.pages h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 60px;
+    line-height: 1.1;
+}
+
+.pages__content {
+    max-width: 900px;
+    background: var(--color-surface);
+    padding: 60px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 77, 0, 0.05);
+}
+
+.pages h2 {
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin: 50px 0 25px;
+    font-family: 'Syne', sans-serif;
+}
+
+.pages p {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.pages strong {
+    color: var(--color-text);
+}
+
+.pages ul {
+    margin-bottom: 30px;
+}
+
+.pages li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: var(--color-text-muted);
+    list-style: none;
+}
+
+.pages li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 12px;
+    height: 2px;
+    background: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+}
+
+.pages__contact-box {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pages__contact-box a {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* Адаптив для контента */
+@media (max-width: 768px) {
+    .pages__content {
+        padding: 30px;
+    }
+    .pages h1 {
+        margin-bottom: 40px;
+    }
+}

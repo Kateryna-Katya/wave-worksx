@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaveWorks | Консалтинг нового поколения</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M10 50 Q 30 20, 50 50 T 90 50' stroke='%23FF4D00' stroke-width='8' fill='none' stroke-linecap='round'/><circle cx='50' cy='50' r='5' fill='%23FF4D00'/></svg>" type="image/svg+xml">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <load
+      src="./partials/header.html"
+/>
+
+<main>
+  <section class="pages contact-page">
+      <div class="container">
+          <h1 data-aos="fade-right">Наши <br><span class="text-accent">контакты</span></h1>
+
+          <div class="contact-page__grid" data-aos="fade-up">
+              <div class="contact-card">
+                  <div class="contact-card__icon">
+                      <i data-lucide="phone"></i>
+                  </div>
+                  <div class="contact-card__info">
+                      <h3>Телефон</h3>
+                      <p>Свяжитесь с нами напрямую для оперативной консультации.</p>
+                      <a href="tel:+390697638236" class="contact-card__link">+39 06 9763 8236</a>
+                  </div>
+              </div>
+
+              <div class="contact-card">
+                  <div class="contact-card__icon">
+                      <i data-lucide="mail"></i>
+                  </div>
+                  <div class="contact-card__info">
+                      <h3>Электронная почта</h3>
+                      <p>Для официальных запросов и предложений по сотрудничеству.</p>
+                      <a href="mailto:hello@wave-worksx.blog" class="contact-card__link">hello@wave-worksx.blog</a>
+                  </div>
+              </div>
+
+              <div class="contact-card">
+                  <div class="contact-card__icon">
+                      <i data-lucide="map-pin"></i>
+                  </div>
+                  <div class="contact-card__info">
+                      <h3>Офис в Италии</h3>
+                      <p>Посетите наш центр инноваций в сердце Рима.</p>
+                      <address>Via del Corso, 4, 00186 Roma RM, Italy</address>
+                  </div>
+              </div>
+
+              <div class="contact-card">
+                  <div class="contact-card__icon">
+                      <i data-lucide="clock"></i>
+                  </div>
+                  <div class="contact-card__info">
+                      <h3>Режим работы</h3>
+                      <p>Мы работаем по европейскому времени (CET).</p>
+                      <span>Пн — Пт: 09:00 – 18:00</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</main>
+
+    <load src="./partials/footer.html" />
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button id="accept-cookies" class="btn btn--primary btn--sm">Принять</button>
+      </div>
+  </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
