@@ -1044,3 +1044,91 @@ img {
         padding: 30px;
     }
 }
+/* ==========================================================================
+   DOP ELEMENTS & MOBILE MENU
+   ========================================================================== */
+
+/* Mobile Menu Overlay */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-bg);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: var(--transition);
+}
+
+.mobile-menu.is-active {
+  transform: translateX(0);
+}
+
+.mobile-menu__list {
+  text-align: center;
+}
+
+.mobile-menu__link {
+  font-size: 2rem;
+  font-family: 'Syne', sans-serif;
+  color: var(--color-text);
+  display: block;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.mobile-menu__link:hover {
+  color: var(--color-primary);
+}
+
+/* Анимация бургера */
+.burger.is-active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.burger.is-active span:nth-child(2) { opacity: 0; }
+.burger.is-active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+/* Cookie Popup */
+.cookie-popup {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  background: var(--color-surface);
+  border: 1px solid rgba(255, 77, 0, 0.2);
+  padding: 20px 30px;
+  border-radius: 20px;
+  z-index: 2000;
+  display: none; /* Скрыто по дефолту */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.cookie-popup__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cookie-popup p { font-size: 0.9rem; color: var(--color-text-muted); }
+.cookie-popup a { color: var(--color-primary); text-decoration: underline; }
+.btn--sm { padding: 8px 20px; font-size: 0.8rem; }
+
+/* Стили для Юридических страниц */
+.pages {
+  padding: 150px 0 100px;
+  background: var(--color-bg);
+}
+
+.pages h1 { color: var(--color-primary); margin-bottom: 40px; font-size: 3rem; }
+.pages h2 { margin: 40px 0 20px; font-size: 1.5rem; color: var(--color-text); }
+.pages p { margin-bottom: 20px; color: var(--color-text-muted); }
+.pages ul { margin-bottom: 20px; padding-left: 20px; }
+.pages li { list-style: disc; color: var(--color-text-muted); margin-bottom: 10px; }
+
+@media (max-width: 768px) {
+  .cookie-popup__content { flex-direction: column; text-align: center; }
+}
