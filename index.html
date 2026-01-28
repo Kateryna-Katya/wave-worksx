@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WaveWorks | Консалтинг нового поколения</title>
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M10 50 Q 30 20, 50 50 T 90 50' stroke='%23FF4D00' stroke-width='8' fill='none' stroke-linecap='round'/><circle cx='50' cy='50' r='5' fill='%23FF4D00'/></svg>" type="image/svg+xml">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/wave-worksx/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/wave-worksx/assets/styles-C2rM2Xne.css">
+    <link rel="stylesheet" crossorigin href="/wave-worksx/assets/styles-B6_ovCed.css">
   </head>
   <body>
     <header class="header">
@@ -37,6 +37,18 @@
       </nav>
   </div>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu__inner">
+      <ul class="mobile-menu__list">
+          <li><a href="#hero" class="mobile-menu__link">Главная</a></li>
+          <li><a href="#about" class="mobile-menu__link">О платформе</a></li>
+          <li><a href="#solutions" class="mobile-menu__link">Решения</a></li>
+          <li><a href="#innovations" class="mobile-menu__link">Инновации</a></li>
+          <li><a href="#blog" class="mobile-menu__link">Блог</a></li>
+          <li><a href="#contact" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+  </div>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
@@ -92,7 +104,7 @@
 
           <div class="about__visual" data-aos="fade-left">
               <div class="about__image-wrapper">
-                  <img src="img/placeholder.png" alt="Innovation" class="about__img">
+                  <img src="/wave-worksx/assets/one-FaQw3w5F.jpg" alt="Innovation" class="about__img">
                   <div class="about__glass-card">
                       <h4 class="glass-card__title">Технология года</h4>
                       <p class="glass-card__text">Методологии, доказавшие эффективность в странах ЕС.</p>
@@ -246,7 +258,7 @@
       <div class="blog__grid">
           <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
               <div class="blog-card__image">
-                  <img src="img/placeholder.png" alt="AI Consulting">
+                  <img src="/wave-worksx/assets/two-BKJ7Z1ww.jpg" alt="AI Consulting">
                   <div class="blog-card__category">Технологии</div>
               </div>
               <div class="blog-card__content">
@@ -255,13 +267,13 @@
                   <p class="blog-card__excerpt">
                       Разбираем, как инновационная технология анализа данных помогает оценивать перспективы проекта в странах ЕС.
                   </p>
-                  <a href="#" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
               </div>
           </article>
 
           <article class="blog-card blog-card--featured" data-aos="fade-up" data-aos-delay="200">
               <div class="blog-card__image">
-                  <img src="img/placeholder.png" alt="Passive Income">
+                  <img src="/wave-worksx/assets/three-RutDrT7o.jpg" alt="Passive Income">
                   <div class="blog-card__category">Доход</div>
               </div>
               <div class="blog-card__content">
@@ -270,13 +282,13 @@
                   <p class="blog-card__excerpt">
                       Методологии, доказавшие эффективность. Пошаговый путь к финансовой свободе через цифровую инфраструктуру.
                   </p>
-                  <a href="#" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
               </div>
           </article>
 
           <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
               <div class="blog-card__image">
-                  <img src="img/placeholder.png" alt="EU Market">
+                  <img src="/wave-worksx/assets/four-B7z89_kz.jpg" alt="EU Market">
                   <div class="blog-card__category">Рынок</div>
               </div>
               <div class="blog-card__content">
@@ -285,7 +297,7 @@
                   <p class="blog-card__excerpt">
                       Обзор передовой цифровой инфраструктуры, которая уже доступна в Италии и других странах Европы.
                   </p>
-                  <a href="#" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
+                  <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-right"></i></a>
               </div>
           </article>
       </div>
@@ -424,6 +436,12 @@
       </div>
   </div>
 </footer>
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="cookie-popup__content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button id="accept-cookies" class="btn btn--primary btn--sm">Принять</button>
+      </div>
+  </div>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
